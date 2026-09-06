@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What building a MERN store taught me about code structure — Yunidh Meena</title>
+<meta name="description" content="Routes, controllers, models and middleware: what building a full MERN e-commerce app taught me about organizing a backend.">
+<meta name="author" content="Yunidh Meena">
+<link rel="icon" href="/assets/avatar.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<script type="module" src="/src/main.js"></script>
+</head>
+<body>
+<div class="bg" aria-hidden="true">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+</div>
+<div class="grain" aria-hidden="true"></div>
+<a class="skip" href="#main">Skip to main content</a>
+<main id="main" class="measure">
+
+  <div class="loadin" style="--i:0">
+    <header class="masthead" style="padding-top: 48px; margin-bottom: 0;">
+      <div class="who">
+        <a href="../" style="display: contents;"><img src="/assets/avatar.svg" alt="" width="56" height="56" class="avatar"></a>
+        <div>
+          <h1 class="name"><a href="../" style="color: inherit; text-decoration: none;">Yunidh Meena</a></h1>
+          <p class="role">Full Stack Developer &middot; AI &amp; LLM Applications</p>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <article class="article">
+    <div class="loadin" style="--i:1">
+      <a class="back" href="../">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+        All posts
+      </a>
+      <img class="article-hero" src="/covers/post-3.svg" alt="Illustration of stacked backend layers: routes, controllers and models" width="1200" height="900">
+      <h1 class="article-title">What building a MERN store taught me about code structure</h1>
+      <div class="article-meta">
+        <span class="pill">MERN</span>
+        <span class="mono">May 2025 &middot; 4 min read</span>
+      </div>
+      <div class="article-body">
+        <p>My <a class="strong" href="https://github.com/yunidhmeena/E-commerce" target="_blank" rel="noopener noreferrer">e-commerce project</a> started as a structured course build: a React storefront on top of an Express API with MongoDB behind it. The catalog, cart, checkout and admin screens were the visible part. The part that actually changed how I write code was the backend's shape.</p>
+        <h2>Layers, not one file</h2>
+        <p>My first instinct with Express would have been one big <code>index.js</code> with every route defined inline. The course project refused to let me. Each concern got its own folder:</p>
+        <pre><code>backend/
+  routes/        # URL to handler mapping
+  controllers/   # request logic, nothing else
+  models/        # Mongoose schemas and queries
+  middlewares/   # auth guard, error handler
+  config/        # db connection, env setup</code></pre>
+        <p>The routes layer reads like a table of contents. When a request misbehaves, I know instantly which file to open, because each layer can only do one job.</p>
+        <h2>Auth is a pipeline</h2>
+        <p>Authentication stopped being mysterious once I saw it as middleware. A signup route hashes the password with bcrypt and stores the user. A login route compares hashes and issues a JWT. Then a single <code>authMiddleware</code> verifies the token from the cookie and attaches the user to the request:</p>
+        <pre><code>router.get("/admin/products", authMiddleware, adminOnly, getProducts)</code></pre>
+        <p>One line expresses "only logged-in admins reach this handler." Before building this, JWT felt like magic. After, it's just a signed string, a secret, and one function in the right place in the pipeline.</p>
+        <h2>What I'd do differently</h2>
+        <ul>
+          <li>Validate input at the boundary. I trusted the client too much and paid for it in weird test data.</li>
+          <li>Image uploads (Multer) deserved their own service early on instead of living inside a controller.</li>
+          <li>Writing the README with setup steps as I went would have saved a painful reconstruction at the end.</li>
+        </ul>
+        <p>Next I'm applying the same layered thinking to AI features: an LLM call is just another controller talking to an external API, and prompt templates belong in their own module, not scattered through handlers.</p>
+      </div>
+    </div>
+  </article>
+</main>
+
+<footer class="measure foot">
+  <hr class="rule">
+  <div class="foot-row">
+    <p class="local mono"><span class="dot" aria-hidden="true"></span>Bengaluru &middot; <time id="local-time" datetime="">--:--</time> IST</p>
+    <nav class="foot-links">
+      <button type="button" class="foot-link mono" id="email-btn" data-email="yunidhkumarm@gmail.com">email</button>
+      <a class="foot-link mono" href="/Yunidh-Meena-Resume.pdf" download>resume</a>
+      <a class="foot-link mono" href="https://github.com/yunidhmeena" target="_blank" rel="noopener noreferrer">github</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>

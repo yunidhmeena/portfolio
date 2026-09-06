@@ -16,6 +16,12 @@
 <script type="module" src="/src/main.js"></script>
 </head>
 <body>
+<div class="bg" aria-hidden="true">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+</div>
+<div class="grain" aria-hidden="true"></div>
 <a class="skip" href="#main">Skip to main content</a>
 <main id="main" class="measure">
 
@@ -43,35 +49,29 @@
       <button role="tab" id="tab-work" aria-selected="true" aria-controls="panel-work" class="tab is-active">Work</button>
       <button role="tab" id="tab-side" aria-selected="false" aria-controls="panel-side" class="tab">Side projects</button>
       <button role="tab" id="tab-writing" aria-selected="false" aria-controls="panel-writing" class="tab">Writing</button>
+      <span class="tab-ind" aria-hidden="true"></span>
     </nav>
 
     <div id="panel-work" role="tabpanel" aria-labelledby="tab-work" class="panel is-active">
 
-      <article class="card">
-        <a class="card-link" href="https://github.com/yunidhmeena/E-commerce" target="_blank" rel="noopener noreferrer" aria-label="Open the MERN e-commerce store on GitHub"></a>
-        <img class="cover" src="/covers/ecommerce.svg" alt="" width="1200" height="900" loading="lazy">
-        <h2 class="card-title">MERN e-commerce store</h2>
-        <p class="card-desc">A full stack store with a product catalog, cart and checkout, admin product management, JWT authentication and image uploads, built with React, Express.js and MongoDB.</p>
+      <article class="card reveal" style="--d:0">
+        <a class="card-link" href="https://github.com/K-naman-T/resto-pos" target="_blank" rel="noopener noreferrer" aria-label="Open the restaurant POS system on GitHub"></a>
+        <img class="cover" src="/covers/resto-pos.svg" alt="" width="1200" height="900" loading="lazy">
+        <h2 class="card-title">Restaurant POS system</h2>
+        <p class="card-desc">A point of sale and restaurant management platform: menu browsing and cart checkout with cash, card and QR payments, dine-in table tracking, live inventory with low-stock alerts, and sales analytics.</p>
       </article>
 
-      <article class="card">
-        <a class="card-link" href="https://github.com/yunidhmeena/machinery" target="_blank" rel="noopener noreferrer" aria-label="Open the machinery company website on GitHub"></a>
-        <img class="cover" src="/covers/machinery.svg" alt="" width="1200" height="900" loading="lazy">
-        <h2 class="card-title">Machinery company website</h2>
-        <p class="card-desc">A production site for a machinery business: responsive hand-written HTML, CSS and JavaScript with a contact funnel that routes customer inquiries to the client.</p>
-      </article>
-
-      <article class="card">
-        <a class="card-link" href="https://github.com/yunidhmeena/brokerage" target="_blank" rel="noopener noreferrer" aria-label="Open the brokerage firm website on GitHub"></a>
-        <img class="cover" src="/covers/brokerage.svg" alt="" width="1200" height="900" loading="lazy">
-        <h2 class="card-title">Brokerage firm website</h2>
-        <p class="card-desc">A client site for a brokerage firm, designed and built end to end as a freelance project with a focus on clean layout and fast loading on phones.</p>
+      <article class="card reveal" style="--d:1">
+        <a class="card-link" href="https://www.innovate-electronics.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit the Innovate Electronics website"></a>
+        <img class="cover" src="/covers/innovate.svg" alt="" width="1200" height="900" loading="lazy">
+        <h2 class="card-title">Innovate Electronics</h2>
+        <p class="card-desc">A full stack platform for an RF and microwave solutions company: the public website plus an Express.js and MongoDB admin backend that manages products, blogs, events and newsletters, deployed with Docker.</p>
       </article>
     </div>
 
     <div id="panel-side" role="tabpanel" aria-labelledby="tab-side" class="panel" hidden>
 
-      <article class="card">
+      <article class="card reveal" style="--d:0">
         <a class="card-link" href="https://github.com/yunidhmeena/system_monitoring" target="_blank" rel="noopener noreferrer" aria-label="Open the Linux system monitor on GitHub"></a>
         <img class="cover" src="/covers/monitor.svg" alt="" width="1200" height="900" loading="lazy">
         <h2 class="card-title">Linux system monitor</h2>
@@ -83,7 +83,7 @@
         </div>
       </article>
 
-      <article class="card">
+      <article class="card reveal" style="--d:1">
         <img class="cover" src="/covers/ai-lab.svg" alt="" width="1200" height="900" loading="lazy">
         <div class="card-title-row">
           <h2 class="card-title">AI experiments</h2>
@@ -94,7 +94,41 @@
     </div>
 
     <div id="panel-writing" role="tabpanel" aria-labelledby="tab-writing" class="panel" hidden>
-      <p class="empty">No posts yet. I'm keeping notes on what I'm building and will publish them here soon.</p>
+      <div class="posts">
+        <a class="post-row reveal" style="--d:0" href="/posts/post-1.html">
+          <img class="post-thumb" src="/covers/post-1.svg" alt="" width="72" height="72" loading="lazy">
+          <span class="post-main">
+            <span class="post-title">Two client sites, zero frameworks</span>
+            <span class="post-date">September 2024 &middot; 3 min read</span>
+          </span>
+          <span class="post-side">
+            <span class="pill">Client work</span>
+            <span class="post-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+          </span>
+        </a>
+        <a class="post-row reveal" style="--d:1" href="/posts/post-2.html">
+          <img class="post-thumb" src="/covers/post-2.svg" alt="" width="72" height="72" loading="lazy">
+          <span class="post-main">
+            <span class="post-title">A Linux system monitor in a few hundred lines of Python</span>
+            <span class="post-date">May 2025 &middot; 4 min read</span>
+          </span>
+          <span class="post-side">
+            <span class="pill">Python</span>
+            <span class="post-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+          </span>
+        </a>
+        <a class="post-row reveal" style="--d:2" href="/posts/post-3.html">
+          <img class="post-thumb" src="/covers/post-3.svg" alt="" width="72" height="72" loading="lazy">
+          <span class="post-main">
+            <span class="post-title">What building a MERN store taught me about code structure</span>
+            <span class="post-date">May 2025 &middot; 4 min read</span>
+          </span>
+          <span class="post-side">
+            <span class="pill">MERN</span>
+            <span class="post-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+          </span>
+        </a>
+      </div>
     </div>
   </div>
 

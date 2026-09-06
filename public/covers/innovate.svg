@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f1f4f8"/>
+      <stop offset="1" stop-color="#dfe5ee"/>
+    </linearGradient>
+    <linearGradient id="navy" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#123152"/>
+      <stop offset="1" stop-color="#0a1d33"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <g transform="translate(170 200)">
+    <rect x="0" y="0" width="560" height="500" rx="16" fill="url(#navy)"/>
+    <g stroke="#28476d" stroke-width="2" opacity="0.6">
+      <line x1="40" y1="0" x2="40" y2="500"/>
+      <line x1="120" y1="0" x2="120" y2="500"/>
+      <line x1="200" y1="0" x2="200" y2="500"/>
+      <line x1="280" y1="0" x2="280" y2="500"/>
+      <line x1="360" y1="0" x2="360" y2="500"/>
+      <line x1="440" y1="0" x2="440" y2="500"/>
+    </g>
+    <polyline points="40,250 90,250 110,180 130,320 150,250 260,250 280,140 300,360 320,250 430,250 450,190 470,310 490,250 520,250" fill="none" stroke="#5eead4" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="150" cy="250" r="8" fill="#5eead4"/>
+    <circle cx="320" cy="250" r="8" fill="#5eead4"/>
+    <circle cx="490" cy="250" r="8" fill="#5eead4"/>
+  </g>
+  <g transform="translate(770 240)">
+    <rect x="0" y="0" width="290" height="420" rx="14" fill="#ffffff" stroke="#c8d2de"/>
+    <path d="M0 14 a14 14 0 0 1 14 -14 h262 a14 14 0 0 1 14 14 v30 h-290 z" fill="#123152"/>
+    <circle cx="24" cy="22" r="6" fill="#e07a5f"/>
+    <circle cx="46" cy="22" r="6" fill="#e5c07b"/>
+    <circle cx="68" cy="22" r="6" fill="#81b29a"/>
+    <rect x="24" y="76" width="160" height="16" rx="8" fill="#123152" opacity="0.9"/>
+    <rect x="24" y="112" width="240" height="10" rx="5" fill="#cfd8e2"/>
+    <rect x="24" y="134" width="200" height="10" rx="5" fill="#dfe6ee"/>
+    <rect x="24" y="172" width="110" height="80" rx="8" fill="#123152"/>
+    <rect x="148" y="172" width="110" height="80" rx="8" fill="#28476d"/>
+    <rect x="24" y="284" width="110" height="80" rx="8" fill="#28476d"/>
+    <rect x="148" y="284" width="110" height="80" rx="8" fill="#123152"/>
+  </g>
+  <g fill="#111113" opacity="0.85" transform="translate(1100 700)">
+    <circle cx="0" cy="0" r="5"/><circle cx="30" cy="-8" r="4"/><circle cx="58" cy="4" r="3"/>
+  </g>
+</svg>

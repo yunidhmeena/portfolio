@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <defs>
+    <radialGradient id="glow" cx="0.5" cy="0.45" r="0.75">
+      <stop offset="0" stop-color="#223047"/>
+      <stop offset="1" stop-color="#12151b"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#glow)"/>
+  <g stroke="#5f7ba8" stroke-width="2" opacity="0.85">
+    <line x1="600" y1="200" x2="330" y2="430"/>
+    <line x1="600" y1="200" x2="600" y2="430"/>
+    <line x1="600" y1="200" x2="870" y2="430"/>
+    <line x1="330" y1="430" x2="240" y2="660"/>
+    <line x1="330" y1="430" x2="450" y2="660"/>
+    <line x1="600" y1="430" x2="450" y2="660"/>
+    <line x1="600" y1="430" x2="760" y2="660"/>
+    <line x1="870" y1="430" x2="760" y2="660"/>
+    <line x1="870" y1="430" x2="970" y2="660"/>
+  </g>
+  <g fill="#a8c3e8">
+    <circle cx="600" cy="200" r="34"/>
+    <circle cx="330" cy="430" r="24"/>
+    <circle cx="600" cy="430" r="24"/>
+    <circle cx="870" cy="430" r="24"/>
+  </g>
+  <g fill="#43597a">
+    <circle cx="240" cy="660" r="18"/>
+    <circle cx="450" cy="660" r="18"/>
+    <circle cx="760" cy="660" r="18"/>
+    <circle cx="970" cy="660" r="18"/>
+  </g>
+  <text x="600" y="790" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#8fa3bd" letter-spacing="4">LANGCHAIN · RAG · EMBEDDINGS</text>
+</svg>

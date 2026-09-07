@@ -47,7 +47,7 @@
         <span class="mono">May 2025 &middot; 4 min read</span>
       </div>
       <div class="article-body">
-        <p>I wanted to answer a simple question without opening a browser: what is this machine actually doing right now? Windows and macOS have pretty graphs for this. On Linux, the answer is spread across <code>top</code>, <code>df</code>, <code>free</code> and whatever desktop widget you haven't configured. So I wrote my own.</p>
+        <p>I wanted to answer a simple question without opening a browser: what is this machine actually doing right now? Windows and macOS ship polished graphs for this. On Linux, the answer is spread across <code>top</code>, <code>df</code>, <code>free</code> and whatever desktop widget you haven't configured. So I wrote my own.</p>
         <p><a class="strong" href="https://github.com/yunidhmeena/system_monitoring" target="_blank" rel="noopener noreferrer">system_monitoring</a> is a small Python CLI tool. It samples CPU, memory and disk usage on an interval, prints them as simple bars, and optionally plots the history with matplotlib.</p>
         <h2>How it works</h2>
         <p>The whole data layer is the <code>psutil</code> library. Every sample is three calls:</p>

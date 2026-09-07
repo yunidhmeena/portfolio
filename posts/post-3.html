@@ -63,7 +63,7 @@
         <p>One line expresses "only logged-in admins reach this handler." Before building this, JWT felt like magic. After, it's just a signed string, a secret, and one function in the right place in the pipeline.</p>
         <h2>What I'd do differently</h2>
         <ul>
-          <li>Validate input at the boundary. I trusted the client too much and paid for it in weird test data.</li>
+          <li>Validate input at the boundary. I trusted the client side too much and paid for it in weird test data.</li>
           <li>Image uploads (Multer) deserved their own service early on instead of living inside a controller.</li>
           <li>Writing the README with setup steps as I went would have saved a painful reconstruction at the end.</li>
         </ul>

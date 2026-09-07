@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Linux system monitor in a few hundred lines of Python — Yunidh Meena</title>
+<meta name="description" content="Building a small CLI tool that watches CPU, memory and disk usage on Linux with psutil and matplotlib.">
+<meta name="author" content="Yunidh Meena">
+<link rel="icon" href="../assets/avatar.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="../assets/main-DLNzvkso.js"></script>
+  <link rel="stylesheet" crossorigin href="../assets/main-B1RCp7Gy.css">
+</head>
+<body>
+<div class="bg" aria-hidden="true">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+</div>
+<div class="grain" aria-hidden="true"></div>
+<a class="skip" href="#main">Skip to main content</a>
+<main id="main" class="measure">
+
+  <div class="loadin" style="--i:0">
+    <header class="masthead" style="padding-top: 48px; margin-bottom: 0;">
+      <div class="who">
+        <a href="../" style="display: contents;"><img src="../assets/avatar.svg" alt="" width="56" height="56" class="avatar"></a>
+        <div>
+          <h1 class="name"><a href="../" style="color: inherit; text-decoration: none;">Yunidh Meena</a></h1>
+          <p class="role">Full Stack Developer &middot; AI &amp; LLM Applications</p>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <article class="article">
+    <div class="loadin" style="--i:1">
+      <a class="back" href="../">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+        All posts
+      </a>
+      <img class="article-hero" src="../covers/post-2.svg" alt="Illustration of a terminal window with CPU, memory and disk bars" width="1200" height="900">
+      <h1 class="article-title">A Linux system monitor in a few hundred lines of Python</h1>
+      <div class="article-meta">
+        <span class="pill">Python</span>
+        <span class="mono">May 2025 &middot; 4 min read</span>
+      </div>
+      <div class="article-body">
+        <p>I wanted to answer a simple question without opening a browser: what is this machine actually doing right now? Windows and macOS ship polished graphs for this. On Linux, the answer is spread across <code>top</code>, <code>df</code>, <code>free</code> and whatever desktop widget you haven't configured. So I wrote my own.</p>
+        <p><a class="strong" href="https://github.com/yunidhmeena/system_monitoring" target="_blank" rel="noopener noreferrer">system_monitoring</a> is a small Python CLI tool. It samples CPU, memory and disk usage on an interval, prints them as simple bars, and optionally plots the history with matplotlib.</p>
+        <h2>How it works</h2>
+        <p>The whole data layer is the <code>psutil</code> library. Every sample is three calls:</p>
+        <pre><code>import psutil
+
+cpu = psutil.cpu_percent(interval=1)
+mem = psutil.virtual_memory().percent
+disk = psutil.disk_usage("/").percent</code></pre>
+        <p>Everything else is presentation. <code>argparse</code> handles the CLI flags (<code>--interval</code>, <code>--plot</code>), a small loop keeps the terminal output aligned, and when plotting is on, the samples collect in a list and matplotlib draws the last minute of CPU history instead of just the current number.</p>
+        <h2>What building it taught me</h2>
+        <ul>
+          <li>Reading OS state is cheap; presenting it well is the actual work.</li>
+          <li>CLI ergonomics matter. Sensible defaults, one flag per behavior, and a clean Ctrl+C exit took longer to get right than the data collection.</li>
+          <li>A README with install and usage instructions is part of the tool. Writing it forced me to make the flags make sense together.</li>
+        </ul>
+        <h2>What I'd add next</h2>
+        <p>Alerts when a threshold is crossed, sampling history persisted between runs, and per-process CPU sorting are the obvious next steps. It's also the kind of tool that would be fun to expose through a tiny Flask or Express API later, which would tie it into the web stack I work in every day.</p>
+      </div>
+    </div>
+  </article>
+</main>
+
+<footer class="measure foot">
+  <hr class="rule">
+  <div class="foot-row">
+    <p class="local mono"><span class="dot" aria-hidden="true"></span>Bengaluru &middot; <time id="local-time" datetime="">--:--</time> IST</p>
+    <nav class="foot-links">
+      <button type="button" class="foot-link mono" id="email-btn" data-email="yunidhkumarm@gmail.com">email</button>
+      <a class="foot-link mono" href="../Yunidh-Meena-Resume.pdf" download>resume</a>
+      <a class="foot-link mono" href="https://github.com/yunidhmeena" target="_blank" rel="noopener noreferrer">github</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>

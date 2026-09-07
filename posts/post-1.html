@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Two client sites, zero frameworks — Yunidh Meena</title>
+<meta name="description" content="What I learned shipping two production client websites with hand-written HTML, CSS and JavaScript.">
+<meta name="author" content="Yunidh Meena">
+<link rel="icon" href="../assets/avatar.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="../assets/main-DLNzvkso.js"></script>
+  <link rel="stylesheet" crossorigin href="../assets/main-B1RCp7Gy.css">
+</head>
+<body>
+<div class="bg" aria-hidden="true">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+</div>
+<div class="grain" aria-hidden="true"></div>
+<a class="skip" href="#main">Skip to main content</a>
+<main id="main" class="measure">
+
+  <div class="loadin" style="--i:0">
+    <header class="masthead" style="padding-top: 48px; margin-bottom: 0;">
+      <div class="who">
+        <a href="../" style="display: contents;"><img src="../assets/avatar.svg" alt="" width="56" height="56" class="avatar"></a>
+        <div>
+          <h1 class="name"><a href="../" style="color: inherit; text-decoration: none;">Yunidh Meena</a></h1>
+          <p class="role">Full Stack Developer &middot; AI &amp; LLM Applications</p>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <article class="article">
+    <div class="loadin" style="--i:1">
+      <a class="back" href="../">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+        All posts
+      </a>
+      <img class="article-hero" src="../covers/post-1.svg" alt="Illustration of two overlapping website layouts" width="1200" height="900">
+      <h1 class="article-title">Two client sites, zero frameworks</h1>
+      <div class="article-meta">
+        <span class="pill">Client work</span>
+        <span class="mono">September 2024 &middot; 3 min read</span>
+      </div>
+      <div class="article-body">
+        <p>Before I touched React, I got paid to write HTML. In 2024 I built and launched two production websites for business clients: a machinery company and a brokerage firm. Both were hand-written HTML, CSS and JavaScript. No framework, no build step, no dependencies.</p>
+        <p>That constraint was the point. The sites needed to load fast on entry-level Android phones, render correctly on whatever browser the client's customers happened to use, and be simple enough that I could hand over a folder the client could reasonably own.</p>
+        <h2>What actually mattered</h2>
+        <p>The machinery site needed one thing above everything: a way for a stranger with a broken machine to become an inquiry in the client's inbox. So the design funnels every page toward a contact form, and the form lands on a thank-you page so the client knows the flow completed. That one flow justified the whole project.</p>
+        <p>For the brokerage firm, credibility was the product. Clean typography, a layout that didn't shout, and pages that opened instantly did more for trust than any feature could.</p>
+        <h2>Lessons I keep using</h2>
+        <ul>
+          <li>Scope shrinks in conversation, not in code. Both sites changed after the first client call.</li>
+          <li>"Done" means launched, not locally correct. Deployment, domains and post-launch fixes are part of the job.</li>
+          <li>Frameworks solve problems I didn't have. Plain CSS and a few dozen lines of JS covered layouts, forms and interactions.</li>
+        </ul>
+        <p>Since then I've moved on to React and full stack work, but I still write CSS the way I learned to on these sites: mobile first, few breakpoints, no utility framework doing the thinking for me.</p>
+      </div>
+    </div>
+  </article>
+</main>
+
+<footer class="measure foot">
+  <hr class="rule">
+  <div class="foot-row">
+    <p class="local mono"><span class="dot" aria-hidden="true"></span>Bengaluru &middot; <time id="local-time" datetime="">--:--</time> IST</p>
+    <nav class="foot-links">
+      <button type="button" class="foot-link mono" id="email-btn" data-email="yunidhkumarm@gmail.com">email</button>
+      <a class="foot-link mono" href="../Yunidh-Meena-Resume.pdf" download>resume</a>
+      <a class="foot-link mono" href="https://github.com/yunidhmeena" target="_blank" rel="noopener noreferrer">github</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>

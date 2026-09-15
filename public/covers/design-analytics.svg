@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <rect width="1200" height="900" fill="#f9fafb"/>
+
+  <rect x="0" y="0" width="300" height="900" fill="#ffffff"/>
+  <line x1="300" y1="0" x2="300" y2="900" stroke="#e5e7eb" stroke-width="2"/>
+
+  <text x="44" y="74" font-family="Inter, -apple-system, Helvetica, Arial, sans-serif" font-size="24" font-weight="800" fill="#111827" letter-spacing="-0.5">LIT<tspan fill="#4f46e5">·</tspan>Analytics</text>
+  <rect x="28" y="112" width="244" height="50" rx="10" fill="#eef2ff"/>
+  <rect x="28" y="112" width="4" height="50" rx="2" fill="#4f46e5"/>
+  <text x="56" y="144" font-family="Inter, sans-serif" font-size="18" font-weight="600" fill="#4f46e5">Dashboard</text>
+  <g font-family="Inter, sans-serif" font-size="18" fill="#4b5563">
+    <text x="56" y="200">Students</text>
+    <text x="56" y="248">Cohorts</text>
+    <text x="56" y="296">Challenges</text>
+    <text x="56" y="344">Reports</text>
+    <text x="56" y="830">Settings</text>
+  </g>
+
+  <rect x="340" y="40" width="200" height="48" rx="10" fill="#ffffff" stroke="#e5e7eb" stroke-width="2"/>
+  <text x="364" y="71" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#111827">Cohort: Oct 2026</text>
+  <rect x="1010" y="40" width="150" height="48" rx="10" fill="#4f46e5"/>
+  <text x="1052" y="71" font-family="Inter, sans-serif" font-size="16" font-weight="700" fill="#ffffff">Export</text>
+
+  <g font-family="Inter, sans-serif">
+    <rect x="340" y="120" width="196" height="130" rx="14" fill="#ffffff" stroke="#e5e7eb" stroke-width="2"/>
+    <text x="364" y="182" font-size="40" font-weight="800" fill="#111827" letter-spacing="-1.5">248</text>
+    <text x="364" y="216" font-size="15" fill="#4b5563">Active students</text>
+
+    <rect x="552" y="120" width="196" height="130" rx="14" fill="#ffffff" stroke="#e5e7eb" stroke-width="2"/>
+    <text x="576" y="182" font-size="40" font-weight="800" fill="#dc2626" letter-spacing="-1.5">17</text>
+    <text x="576" y="216" font-size="15" fill="#4b5563">At risk</text>
+    <text x="576" y="238" font-size="13" font-weight="600" fill="#dc2626">↑ 4 this week</text>
+
+    <rect x="764" y="120" width="196" height="130" rx="14" fill="#ffffff" stroke="#e5e7eb" stroke-width="2"/>
+    <text x="788" y="182" font-size="40" font-weight="800" fill="#111827" letter-spacing="-1.5">191</text>
+    <text x="788" y="216" font-size="15" fill="#4b5563">On pace</text>
+
+    <rect x="976" y="120" width="184" height="130" rx="14" fill="#ffffff" stroke="#e5e7eb" stroke-width="2"/>
+    <text x="1000" y="182" font-size="40" font-weight="800" fill="#059669" letter-spacing="-1.5">82%</text>
+    <text x="1000" y="216" font-size="15" fill="#4b5563">Completion</text>
+    <text x="1000" y="238" font-size="13" font-weight="600" fill="#059669">↑ 8% vs last</text>
+  </g>
+
+  <rect x="340" y="278" width="820" height="216" rx="14" fill="#ffffff" stroke="#e5e7eb" stroke-width="2"/>
+  <text x="364" y="318" font-family="Inter, sans-serif" font-size="18" font-weight="700" fill="#111827">⚠ Attention needed</text>
+  <text x="1080" y="318" font-family="Inter, sans-serif" font-size="15" font-weight="600" fill="#4f46e5">See all →</text>
+  <line x1="364" y1="338" x2="1136" y2="338" stroke="#f3f4f6" stroke-width="2"/>
+
+  <rect x="364" y="332" width="3" height="44" rx="2" fill="#dc2626"/>
+  <circle cx="398" cy="356" r="18" fill="#eef2ff"/>
+  <text x="390" y="362" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#4f46e5">AS</text>
+  <text x="428" y="352" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#111827">Aditya Sharma</text>
+  <text x="428" y="374" font-family="Inter, sans-serif" font-size="13" fill="#6b7280">Missed 3 challenges · no activity 6 days</text>
+  <rect x="1010" y="340" width="126" height="36" rx="8" fill="#4f46e5"/>
+  <text x="1040" y="364" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#ffffff">Message</text>
+
+  <line x1="364" y1="392" x2="1136" y2="392" stroke="#f3f4f6" stroke-width="2"/>
+  <rect x="364" y="398" width="3" height="44" rx="2" fill="#d97706"/>
+  <circle cx="398" cy="422" r="18" fill="#eef2ff"/>
+  <text x="390" y="428" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#4f46e5">SR</text>
+  <text x="428" y="418" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#111827">Sneha Reddy</text>
+  <text x="428" y="440" font-family="Inter, sans-serif" font-size="13" fill="#6b7280">Stalled 12 days · peer score down 22%</text>
+  <rect x="1010" y="406" width="126" height="36" rx="8" fill="#4f46e5"/>
+  <text x="1040" y="430" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#ffffff">Message</text>
+
+  <rect x="340" y="518" width="400" height="342" rx="14" fill="#ffffff" stroke="#e5e7eb" stroke-width="2"/>
+  <text x="364" y="558" font-family="Inter, sans-serif" font-size="18" font-weight="700" fill="#111827">Cohort progress</text>
+  <g>
+    <rect x="364" y="584" width="352" height="14" rx="7" fill="#f3f4f6"/>
+    <rect x="364" y="584" width="38" height="14" rx="7" fill="#2563eb"/>
+    <rect x="404" y="584" width="266" height="14" rx="7" fill="#059669"/>
+    <rect x="672" y="584" width="26" height="14" rx="7" fill="#d97706"/>
+    <rect x="700" y="584" width="16" height="14" rx="7" fill="#dc2626"/>
+  </g>
+  <g font-family="Inter, sans-serif" font-size="14" fill="#4b5563">
+    <circle cx="372" cy="644" r="5" fill="#2563eb"/><text x="386" y="649">Ahead 28</text>
+    <circle cx="478" cy="644" r="5" fill="#059669"/><text x="492" y="649">On pace 191</text>
+    <circle cx="606" cy="644" r="5" fill="#d97706"/><text x="620" y="649">Behind 12</text>
+    <circle cx="706" cy="644" r="5" fill="#dc2626"/><text x="720" y="649">At risk 17</text>
+  </g>
+  <rect x="364" y="686" width="180" height="44" rx="9" fill="#ffffff" stroke="#e5e7eb" stroke-width="2"/>
+  <text x="386" y="714" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#4b5563">Filter by segment</text>
+
+  <rect x="760" y="518" width="400" height="342" rx="14" fill="#ffffff" stroke="#e5e7eb" stroke-width="2"/>
+  <text x="784" y="558" font-family="Inter, sans-serif" font-size="18" font-weight="700" fill="#111827">Completion trend</text>
+  <rect x="1000" y="534" width="136" height="34" rx="8" fill="#f3f4f6"/>
+  <text x="1016" y="556" font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#4b5563">By cohort</text>
+  <g stroke="#e5e7eb" stroke-width="2" stroke-dasharray="5 6">
+    <line x1="784" y1="620" x2="1136" y2="620"/>
+    <line x1="784" y1="680" x2="1136" y2="680"/>
+    <line x1="784" y1="740" x2="1136" y2="740"/>
+  </g>
+  <polyline points="784,780 854,764 924,772 994,712 1064,660 1134,606" fill="none" stroke="#4f46e5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#ffffff" stroke="#4f46e5" stroke-width="3">
+    <circle cx="784" cy="780" r="5"/>
+    <circle cx="854" cy="764" r="5"/>
+    <circle cx="924" cy="772" r="5"/>
+    <circle cx="994" cy="712" r="5"/>
+    <circle cx="1064" cy="660" r="5"/>
+  </g>
+  <circle cx="1134" cy="606" r="7" fill="#4f46e5"/>
+  <g font-family="Inter, sans-serif" font-size="13" fill="#9ca3af" text-anchor="middle">
+    <text x="784" y="812">C1</text><text x="854" y="812">C2</text><text x="924" y="812">C3</text>
+    <text x="994" y="812">C4</text><text x="1064" y="812">C5</text><text x="1134" y="812">C6</text>
+  </g>
+
+  <text x="70" y="880" font-family="JetBrains Mono, ui-monospace, monospace" font-size="20" fill="#9ca3af">data visualization · information architecture · saas ui</text>
+</svg>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blinkit Smart Grocery List — Concept</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="phone-frame">
+    <!-- Header -->
+    <header class="header">
+      <div>
+        <h1 class="header-title">Grocery List</h1>
+        <div class="household">
+          <div class="avatars">
+            <span class="avatar">R</span>
+            <span class="avatar">P</span>
+            <span class="avatar">A</span>
+          </div>
+          <span class="live-dot"></span>
+          <span class="live-text">3 sharing</span>
+        </div>
+      </div>
+      <button class="icon-btn">⋯</button>
+    </header>
+
+    <!-- Search -->
+    <div class="search-wrap">
+      <div class="search-bar">
+        <span>🔍</span>
+        <input type="text" placeholder="Search or add item">
+      </div>
+    </div>
+
+    <!-- Running Low -->
+    <section class="running-low">
+      <p class="section-label">Running low</p>
+      <div class="suggest-card" data-suggest>
+        <div class="suggest-main">
+          <span class="suggest-emoji">🥛</span>
+          <div>
+            <p class="suggest-name">Milk (1L)</p>
+            <p class="suggest-meta">Last bought 4 days ago</p>
+          </div>
+        </div>
+        <button class="btn-add" onclick="addSuggestion(this)">Add</button>
+      </div>
+      <div class="suggest-card" data-suggest>
+        <div class="suggest-main">
+          <span class="suggest-emoji">🥚</span>
+          <div>
+            <p class="suggest-name">Eggs (12)</p>
+            <p class="suggest-meta">Last bought 6 days ago</p>
+          </div>
+        </div>
+        <button class="btn-add" onclick="addSuggestion(this)">Add</button>
+      </div>
+    </section>
+
+    <!-- List -->
+    <section class="list-section">
+      <p class="section-label">In your list <span id="itemCount">(8)</span></p>
+      <div class="list" id="groceryList">
+        <label class="list-row">
+          <input type="checkbox" onchange="updateCount()">
+          <span class="item-name">Milk 1L</span>
+        </label>
+        <label class="list-row">
+          <input type="checkbox" onchange="updateCount()">
+          <span class="item-name">Eggs 12</span>
+        </label>
+        <label class="list-row">
+          <input type="checkbox" checked onchange="updateCount()">
+          <span class="item-name">Atta 5kg</span>
+          <span class="added-by">P</span>
+        </label>
+        <label class="list-row">
+          <input type="checkbox" onchange="updateCount()">
+          <span class="item-name">Onions 1kg</span>
+        </label>
+        <label class="list-row">
+          <input type="checkbox" onchange="updateCount()">
+          <span class="item-name">Tomatoes 500g</span>
+        </label>
+        <label class="list-row">
+          <input type="checkbox" onchange="updateCount()">
+          <span class="item-name">Dal 1kg</span>
+          <span class="added-by">R</span>
+        </label>
+        <label class="list-row">
+          <input type="checkbox" onchange="updateCount()">
+          <span class="item-name">Coriander</span>
+        </label>
+        <label class="list-row">
+          <input type="checkbox" onchange="updateCount()">
+          <span class="item-name">Ginger 250g</span>
+        </label>
+      </div>
+    </section>
+
+    <!-- Voice FAB -->
+    <button class="voice-fab" id="voiceFab" onclick="openVoice()">🎤</button>
+
+    <!-- Checkout Bar -->
+    <div class="checkout-bar">
+      <span class="checkout-count" id="checkoutCount">1/9 items</span>
+      <span class="checkout-total">🛒 Checkout ₹842</span>
+    </div>
+
+    <!-- Voice Modal -->
+    <div class="voice-modal" id="voiceModal">
+      <div class="voice-content">
+        <div class="voice-mic" id="voiceMic">🎤</div>
+        <p class="voice-transcript" id="transcript">"add 2 litres milk and a dozen eggs"</p>
+        <div class="voice-parsed">
+          <div class="parsed-chip">✓ Milk — 2 L</div>
+          <div class="parsed-chip">✓ Eggs — 12</div>
+        </div>
+        <div class="voice-actions">
+          <button class="btn-ghost" onclick="closeVoice()">Undo</button>
+          <button class="btn-primary-sm" onclick="closeVoice()">Done</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function addSuggestion(btn) {
+      const card = btn.closest('.suggest-card');
+      const name = card.querySelector('.suggest-name').textContent;
+      card.classList.add('added');
+      btn.textContent = 'Added ✓';
+      const list = document.getElementById('groceryList');
+      const row = document.createElement('label');
+      row.className = 'list-row';
+      row.innerHTML = `<input type="checkbox" onchange="updateCount()"><span class="item-name">${name}</span>`;
+      list.appendChild(row);
+      updateCount();
+      setTimeout(() => card.classList.add('collapsed'), 800);
+    }
+
+    function updateCount() {
+      const all = document.querySelectorAll('#groceryList .list-row');
+      const done = document.querySelectorAll('#groceryList input:checked');
+      document.getElementById('itemCount').textContent = `(${all.length - done.length})`;
+      document.getElementById('checkoutCount').textContent = `${done.length}/${all.length} items`;
+    }
+
+    function openVoice() {
+      document.getElementById('voiceModal').classList.add('open');
+    }
+    function closeVoice() {
+      document.getElementById('voiceModal').classList.remove('open');
+    }
+
+    updateCount();
+  </script>
+</body>
+</html>

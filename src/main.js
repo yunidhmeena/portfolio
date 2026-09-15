@@ -9,6 +9,7 @@ const tabNav = document.querySelector(".tabs");
 const tabInd = document.querySelector(".tab-ind");
 const panels = {
   "tab-work": document.getElementById("panel-work"),
+  "tab-design": document.getElementById("panel-design"),
   "tab-side": document.getElementById("panel-side"),
   "tab-writing": document.getElementById("panel-writing"),
 };

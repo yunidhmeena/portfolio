@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Analytics Dashboard — Concept</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="brand">LIT<span>·</span>Analytics</div>
+      <nav class="side-nav">
+        <a href="#" class="side-link active">◫ Dashboard</a>
+        <a href="#" class="side-link">◫ Students</a>
+        <a href="#" class="side-link">◫ Cohorts</a>
+        <a href="#" class="side-link">◫ Challenges</a>
+        <a href="#" class="side-link">◫ Reports</a>
+      </nav>
+      <nav class="side-nav side-nav-bottom">
+        <a href="#" class="side-link">⚙ Settings</a>
+      </nav>
+    </aside>
+
+    <!-- Main -->
+    <div class="main">
+      <!-- Topbar -->
+      <header class="topbar">
+        <a href="#" class="cohort-switch">Cohort: Oct 2026 ▾</a>
+        <div class="topbar-actions">
+          <button class="btn btn-secondary btn-sm">Export ▾</button>
+          <button class="icon-btn" aria-label="Notifications">🔔</button>
+          <button class="icon-btn" aria-label="Profile">👤</button>
+        </div>
+      </header>
+
+      <!-- Content -->
+      <main class="content">
+        <!-- KPI Strip -->
+        <section class="kpi-grid">
+          <div class="kpi-card">
+            <div class="kpi-value" data-count="248">0</div>
+            <div class="kpi-label">Active students</div>
+          </div>
+          <div class="kpi-card kpi-risk">
+            <div class="kpi-value" data-count="17">0</div>
+            <div class="kpi-label">At risk</div>
+            <div class="kpi-delta delta-up">↑ 4 this week</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-value" data-count="191">0</div>
+            <div class="kpi-label">On pace</div>
+            <div class="kpi-delta">77% of cohort</div>
+          </div>
+          <div class="kpi-card kpi-success">
+            <div class="kpi-value">82<span>%</span></div>
+            <div class="kpi-label">Completion rate</div>
+            <div class="kpi-delta delta-good">↑ 8% vs last</div>
+          </div>
+        </section>
+
+        <!-- Attention -->
+        <section class="panel">
+          <div class="panel-head">
+            <h2>⚠ Attention needed <span class="muted">(17)</span></h2>
+            <a href="#" class="link">See all →</a>
+          </div>
+          <div class="attention-list">
+            <div class="attention-row priority-red">
+              <div class="stu">
+                <span class="stu-avatar">AS</span>
+                <div>
+                  <p class="stu-name">Aditya Sharma</p>
+                  <p class="stu-reason">Missed 3 challenges · no activity 6 days</p>
+                </div>
+              </div>
+              <div class="row-actions">
+                <button class="btn btn-ghost btn-sm">View</button>
+                <button class="btn btn-primary btn-sm">Message</button>
+              </div>
+            </div>
+            <div class="attention-row priority-amber">
+              <div class="stu">
+                <span class="stu-avatar">SR</span>
+                <div>
+                  <p class="stu-name">Sneha Reddy</p>
+                  <p class="stu-reason">Stalled 12 days · peer score down 22%</p>
+                </div>
+              </div>
+              <div class="row-actions">
+                <button class="btn btn-ghost btn-sm">View</button>
+                <button class="btn btn-primary btn-sm">Message</button>
+              </div>
+            </div>
+            <div class="attention-row priority-amber">
+              <div class="stu">
+                <span class="stu-avatar">KM</span>
+                <div>
+                  <p class="stu-name">Karan Mehta</p>
+                  <p class="stu-reason">Behind by 4 challenges</p>
+                </div>
+              </div>
+              <div class="row-actions">
+                <button class="btn btn-ghost btn-sm">View</button>
+                <button class="btn btn-primary btn-sm">Message</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Charts row -->
+        <section class="charts-grid">
+          <!-- Cohort progress -->
+          <div class="panel">
+            <div class="panel-head">
+              <h2>Cohort progress</h2>
+            </div>
+            <div class="progress-bar">
+              <span class="seg seg-ahead" style="width:11%"></span>
+              <span class="seg seg-on" style="width:77%"></span>
+              <span class="seg seg-behind" style="width:7%"></span>
+              <span class="seg seg-risk" style="width:5%"></span>
+            </div>
+            <div class="legend">
+              <span class="legend-item"><i class="dot dot-blue"></i>Ahead 28</span>
+              <span class="legend-item"><i class="dot dot-green"></i>On pace 191</span>
+              <span class="legend-item"><i class="dot dot-amber"></i>Behind 12</span>
+              <span class="legend-item"><i class="dot dot-red"></i>At risk 17</span>
+            </div>
+            <button class="btn btn-secondary btn-sm">Filter by segment</button>
+          </div>
+
+          <!-- Completion trend -->
+          <div class="panel">
+            <div class="panel-head">
+              <h2>Completion trend</h2>
+              <div class="toggle">
+                <button class="toggle-btn active">By cohort</button>
+                <button class="toggle-btn">By month</button>
+              </div>
+            </div>
+            <svg class="line-chart" viewBox="0 0 400 200" preserveAspectRatio="none">
+              <line x1="0" y1="40" x2="400" y2="40" class="grid"/>
+              <line x1="0" y1="90" x2="400" y2="90" class="grid"/>
+              <line x1="0" y1="140" x2="400" y2="140" class="grid"/>
+              <polyline class="trend-line"
+                points="20,160 90,150 160,155 230,110 300,80 370,50" />
+              <circle cx="20" cy="160" r="4" class="pt"/>
+              <circle cx="90" cy="150" r="4" class="pt"/>
+              <circle cx="160" cy="155" r="4" class="pt"/>
+              <circle cx="230" cy="110" r="4" class="pt"/>
+              <circle cx="300" cy="80" r="4" class="pt"/>
+              <circle cx="370" cy="50" r="4" class="pt pt-last"/>
+            </svg>
+            <div class="axis-labels">
+              <span>C1</span><span>C2</span><span>C3</span><span>C4</span><span>C5</span><span>C6</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Challenge pass rates -->
+        <section class="panel">
+          <div class="panel-head">
+            <h2>Challenge pass rates</h2>
+            <a href="#" class="link">Export CSV</a>
+          </div>
+          <div class="bars">
+            <div class="bar-row">
+              <span class="bar-label">Auth flow</span>
+              <div class="bar-track"><span class="bar-fill" style="width:92%"></span></div>
+              <span class="bar-val">92%</span>
+            </div>
+            <div class="bar-row">
+              <span class="bar-label">API design</span>
+              <div class="bar-track"><span class="bar-fill" style="width:87%"></span></div>
+              <span class="bar-val">87%</span>
+            </div>
+            <div class="bar-row flagged">
+              <span class="bar-label">State mgmt</span>
+              <div class="bar-track"><span class="bar-fill flag" style="width:64%"></span></div>
+              <span class="bar-val">64%</span>
+              <span class="flag-tag">⚑ curriculum flag</span>
+            </div>
+            <div class="bar-row">
+              <span class="bar-label">Deployment</span>
+              <div class="bar-track"><span class="bar-fill" style="width:78%"></span></div>
+              <span class="bar-val">78%</span>
+            </div>
+            <div class="bar-row">
+              <span class="bar-label">Testing</span>
+              <div class="bar-track"><span class="bar-fill" style="width:71%"></span></div>
+              <span class="bar-val">71%</span>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <script>
+    // KPI count-up
+    document.querySelectorAll('[data-count]').forEach(el => {
+      const target = +el.dataset.count;
+      let current = 0;
+      const step = Math.max(1, Math.round(target / 50));
+      const timer = setInterval(() => {
+        current += step;
+        if (current >= target) { current = target; clearInterval(timer); }
+        el.textContent = current;
+      }, 20);
+    });
+
+    // Toggle buttons
+    document.querySelectorAll('.toggle').forEach(group => {
+      group.querySelectorAll('.toggle-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          group.querySelectorAll('.toggle-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+        });
+      });
+    });
+
+    // Side nav
+    document.querySelectorAll('.side-link').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        document.querySelectorAll('.side-link').forEach(l => l.classList.remove('active'));
+        link.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>

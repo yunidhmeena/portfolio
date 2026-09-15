@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <defs>
+    <linearGradient id="rb" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eef4ff"/>
+      <stop offset="1" stop-color="#e6ecf7"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#rb)"/>
+
+  <text x="70" y="104" font-family="Inter, -apple-system, Helvetica, Arial, sans-serif" font-size="40" font-weight="800" fill="#2563eb" letter-spacing="-1">rapido</text>
+  <g transform="translate(250 74)">
+    <path d="M12 2 3 13h7l-1 9 9-11h-7z" fill="#10b981"/>
+  </g>
+  <text x="1010" y="104" font-family="Inter, sans-serif" font-size="20" font-weight="700" fill="#1e293b">Safe. Fast. Yours.</text>
+
+  <rect x="90" y="170" width="330" height="620" rx="44" fill="#ffffff" stroke="#dde3ee" stroke-width="3"/>
+  <rect x="120" y="210" width="270" height="56" rx="28" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2"/>
+  <circle cx="150" cy="238" r="9" fill="none" stroke="#2563eb" stroke-width="3"/>
+  <text x="172" y="246" font-family="Inter, sans-serif" font-size="19" fill="#94a3b8">Where to?</text>
+
+  <rect x="120" y="300" width="126" height="150" rx="18" fill="#eff6ff" stroke="#2563eb" stroke-width="3"/>
+  <text x="146" y="372" font-size="46" font-family="Inter, sans-serif">🛵</text>
+  <text x="146" y="404" font-family="Inter, sans-serif" font-size="17" font-weight="700" fill="#1e293b">Bike</text>
+  <text x="146" y="428" font-family="Inter, sans-serif" font-size="19" font-weight="800" fill="#2563eb">₹45</text>
+  <rect x="264" y="300" width="126" height="150" rx="18" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2"/>
+  <text x="290" y="372" font-size="46" font-family="Inter, sans-serif">🚗</text>
+  <text x="290" y="404" font-family="Inter, sans-serif" font-size="17" font-weight="700" fill="#1e293b">Auto</text>
+  <text x="290" y="428" font-family="Inter, sans-serif" font-size="19" font-weight="800" fill="#2563eb">₹120</text>
+
+  <rect x="120" y="486" width="270" height="120" rx="16" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+  <rect x="120" y="486" width="5" height="120" rx="2" fill="#10b981"/>
+  <text x="146" y="528" font-family="Inter, sans-serif" font-size="18" font-weight="700" fill="#1e293b">Safety Features</text>
+  <text x="146" y="558" font-family="Inter, sans-serif" font-size="15" fill="#64748b">Share live location, SOS</text>
+  <text x="146" y="582" font-family="Inter, sans-serif" font-size="15" fill="#64748b">button, OTP verification</text>
+
+  <rect x="120" y="636" width="270" height="60" rx="14" fill="#2563eb"/>
+  <text x="196" y="674" font-family="Inter, sans-serif" font-size="20" font-weight="700" fill="#ffffff">Book Bike ₹45</text>
+  <rect x="150" y="736" width="60" height="8" rx="4" fill="#cbd5e1"/>
+  <rect x="240" y="736" width="60" height="8" rx="4" fill="#cbd5e1"/>
+  <rect x="330" y="736" width="30" height="8" rx="4" fill="#cbd5e1"/>
+
+  <text x="500" y="270" font-family="Inter, sans-serif" font-size="56" font-weight="800" fill="#1e293b" letter-spacing="-2">Repositioning a</text>
+  <text x="500" y="336" font-family="Inter, sans-serif" font-size="56" font-weight="800" fill="#2563eb" letter-spacing="-2">"cheap ride" as</text>
+  <text x="500" y="402" font-family="Inter, sans-serif" font-size="56" font-weight="800" fill="#1e293b" letter-spacing="-2">safe and reliable.</text>
+
+  <g transform="translate(500 470)">
+    <rect x="0" y="0" width="150" height="150" rx="24" fill="#2563eb"/>
+    <path d="M75 30 40 52v30c0 26 15 44 35 52 20-8 35-26 35-52V52z" fill="#ffffff" opacity="0.95"/>
+    <path d="M60 82 71 93 92 71" fill="none" stroke="#2563eb" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="690" y="518" font-family="Inter, sans-serif" font-size="22" font-weight="700" fill="#1e293b">Trust, made visible</text>
+  <text x="690" y="552" font-family="Inter, sans-serif" font-size="18" fill="#64748b">Shield motif, blue palette, calm surfaces —</text>
+  <text x="690" y="580" font-family="Inter, sans-serif" font-size="18" fill="#64748b">a full identity system plus app UI.</text>
+
+  <g font-family="JetBrains Mono, ui-monospace, monospace" font-size="17">
+    <rect x="500" y="660" width="160" height="44" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+    <text x="524" y="688" fill="#2563eb">#2563EB</text>
+    <rect x="676" y="660" width="160" height="44" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+    <text x="700" y="688" fill="#10b981">#10B981</text>
+    <rect x="852" y="660" width="160" height="44" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+    <text x="876" y="688" fill="#1e293b">#1E293B</text>
+  </g>
+
+  <text x="70" y="860" font-family="JetBrains Mono, ui-monospace, monospace" font-size="20" fill="#5b6b82">brand system · logo · app ui · marketing</text>
+</svg>

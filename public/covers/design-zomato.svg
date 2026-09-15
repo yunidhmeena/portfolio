@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <defs>
+    <linearGradient id="zc1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E23744"/>
+      <stop offset="1" stop-color="#FF6B35"/>
+    </linearGradient>
+    <linearGradient id="zc2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FF6B35"/>
+      <stop offset="1" stop-color="#FFB020"/>
+    </linearGradient>
+    <linearGradient id="zc3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1388ff"/>
+      <stop offset="1" stop-color="#00e6a5"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="#ffffff"/>
+
+  <text x="70" y="104" font-family="Inter, -apple-system, Helvetica, Arial, sans-serif" font-size="40" font-weight="700" fill="#E23744">zomato</text>
+  <rect x="330" y="64" width="600" height="60" rx="30" fill="#ffffff" stroke="#e8e8e8" stroke-width="2"/>
+  <circle cx="368" cy="94" r="10" fill="none" stroke="#9c9c9c" stroke-width="3"/>
+  <path d="M376 102 384 110" stroke="#9c9c9c" stroke-width="3" stroke-linecap="round"/>
+  <text x="398" y="102" font-family="Inter, sans-serif" font-size="21" fill="#9c9c9c">What are you in the mood for?</text>
+  <circle cx="1128" cy="94" r="20" fill="#f8f8f8"/>
+
+  <g font-family="Inter, sans-serif" font-size="19" font-weight="600">
+    <rect x="70" y="164" width="118" height="48" rx="24" fill="#E23744"/>
+    <text x="95" y="195" fill="#ffffff">Biryani</text>
+    <rect x="200" y="164" width="152" height="48" rx="24" fill="#ffffff" stroke="#e8e8e8" stroke-width="2"/>
+    <text x="224" y="195" fill="#1c1c1c">Date Night</text>
+    <rect x="364" y="164" width="122" height="48" rx="24" fill="#ffffff" stroke="#e8e8e8" stroke-width="2"/>
+    <text x="388" y="195" fill="#1c1c1c">Budget</text>
+    <rect x="498" y="164" width="128" height="48" rx="24" fill="#ffffff" stroke="#e8e8e8" stroke-width="2"/>
+    <text x="522" y="195" fill="#1c1c1c">Healthy</text>
+  </g>
+
+  <rect x="70" y="248" width="310" height="400" rx="18" fill="#ffffff" stroke="#ececec" stroke-width="2"/>
+  <rect x="88" y="266" width="274" height="180" rx="14" fill="url(#zc1)"/>
+  <rect x="104" y="282" width="60" height="26" rx="13" fill="#ffffff"/>
+  <text x="118" y="300" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#E23744">NEW</text>
+  <text x="88" y="486" font-family="Inter, sans-serif" font-size="22" font-weight="600" fill="#1c1c1c">The Booze Kitchen</text>
+  <text x="88" y="518" font-family="Inter, sans-serif" font-size="17" fill="#686b78">4.5 · ₹₹₹ · 2.1 km</text>
+  <rect x="88" y="538" width="112" height="30" rx="15" fill="#fff0f1"/>
+  <text x="104" y="558" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#E23744">Romantic</text>
+  <rect x="212" y="538" width="66" height="30" rx="15" fill="#f0f0f0"/>
+  <text x="230" y="558" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#686b78">Bar</text>
+
+  <rect x="400" y="248" width="310" height="400" rx="18" fill="#ffffff" stroke="#ececec" stroke-width="2"/>
+  <rect x="418" y="266" width="274" height="180" rx="14" fill="url(#zc2)"/>
+  <text x="418" y="486" font-family="Inter, sans-serif" font-size="22" font-weight="600" fill="#1c1c1c">Olive Bistro</text>
+  <text x="418" y="518" font-family="Inter, sans-serif" font-size="17" fill="#686b78">4.3 · ₹₹₹₹ · 3.4 km</text>
+  <rect x="418" y="538" width="118" height="30" rx="15" fill="#fff0f1"/>
+  <text x="434" y="558" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#E23744">Candlelit</text>
+  <rect x="548" y="538" width="82" height="30" rx="15" fill="#f0f0f0"/>
+  <text x="566" y="558" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#686b78">Italian</text>
+
+  <rect x="730" y="248" width="400" height="400" rx="18" fill="url(#zc1)"/>
+  <rect x="730" y="248" width="400" height="400" rx="18" fill="#000000" opacity="0.18"/>
+  <text x="770" y="560" font-family="Inter, sans-serif" font-size="30" font-weight="700" fill="#ffffff">Date Night in</text>
+  <text x="770" y="598" font-family="Inter, sans-serif" font-size="30" font-weight="700" fill="#ffffff">Koramangala</text>
+  <text x="770" y="632" font-family="Inter, sans-serif" font-size="17" fill="#ffffff" opacity="0.82">5 verified spots · updated weekly</text>
+
+  <rect x="70" y="690" width="310" height="120" rx="16" fill="#fafafa" stroke="#ececec" stroke-width="2"/>
+  <rect x="88" y="708" width="180" height="12" rx="6" fill="#e0e0e0"/>
+  <rect x="88" y="732" width="130" height="12" rx="6" fill="#ececec"/>
+  <rect x="70" y="690" width="4" height="120" rx="2" fill="#E23744"/>
+  <rect x="400" y="690" width="310" height="120" rx="16" fill="#fafafa" stroke="#ececec" stroke-width="2"/>
+  <rect x="418" y="708" width="200" height="12" rx="6" fill="#e0e0e0"/>
+  <rect x="418" y="732" width="110" height="12" rx="6" fill="#ececec"/>
+  <rect x="400" y="690" width="4" height="120" rx="2" fill="#00e6a5"/>
+  <rect x="730" y="690" width="400" height="120" rx="16" fill="#fafafa" stroke="#ececec" stroke-width="2"/>
+  <rect x="748" y="708" width="220" height="12" rx="6" fill="#e0e0e0"/>
+  <rect x="748" y="732" width="150" height="12" rx="6" fill="#ececec"/>
+  <rect x="730" y="690" width="4" height="120" rx="2" fill="#ffb020"/>
+
+  <text x="70" y="860" font-family="JetBrains Mono, ui-monospace, monospace" font-size="20" fill="#9c9c9c">intent search · ux case study · figma + html prototype</text>
+</svg>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zomato Search Redesign — Concept</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="header-left">
+        <button class="hamburger" aria-label="Menu">☰</button>
+        <span class="logo">zomato</span>
+      </div>
+      <div class="header-center">
+        <div class="search-bar" id="searchBar">
+          <span class="search-icon">🔍</span>
+          <input type="text" placeholder="What are you in the mood for?" id="searchInput">
+          <button class="search-clear" id="searchClear" style="display:none">✕</button>
+        </div>
+      </div>
+      <div class="header-right">
+        <button class="icon-btn" aria-label="Notifications">🔔</button>
+        <button class="icon-btn avatar" aria-label="Profile">👤</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main">
+    <!-- Quick Picks -->
+    <section class="quick-picks">
+      <p class="section-label">Quick picks:</p>
+      <div class="chips-row">
+        <button class="chip active">Biryani</button>
+        <button class="chip">Date Night</button>
+        <button class="chip">Budget</button>
+        <button class="chip">Healthy</button>
+        <button class="chip">Late Night</button>
+        <button class="chip">Café</button>
+      </div>
+    </section>
+
+    <!-- Filter Bar -->
+    <section class="filter-bar">
+      <div class="filter-items">
+        <button class="filter-btn">Cuisine ▾</button>
+        <button class="filter-btn active">Mood ▾</button>
+        <button class="filter-btn">Dietary ▾</button>
+        <button class="filter-btn">Price ▾</button>
+        <button class="filter-btn">Distance ▾</button>
+        <button class="filter-btn">Open Now</button>
+        <div class="filter-spacer"></div>
+        <button class="filter-btn sort">Sort: Relevance ▾</button>
+      </div>
+      <div class="active-filters">
+        <span class="active-filter">Date Night ✕</span>
+        <span class="active-filter">Romantic ✕</span>
+      </div>
+    </section>
+
+    <!-- Results Count -->
+    <section class="results-info">
+      <p>Showing <strong>42 results</strong> for "date night" in Koramangala</p>
+    </section>
+
+    <!-- Restaurant Grid -->
+    <section class="restaurant-grid">
+      <div class="restaurant-card">
+        <div class="card-image" style="background: linear-gradient(135deg, #E23744 0%, #FF6B35 100%);">
+          <span class="badge badge-new">NEW</span>
+          <span class="badge badge-veg">🌿</span>
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">The Booze Kitchen</h3>
+          <div class="card-meta">
+            <span class="rating">⭐ 4.5</span>
+            <span class="dot">·</span>
+            <span class="price">₹₹₹</span>
+            <span class="dot">·</span>
+            <span class="distance">2.1 km</span>
+          </div>
+          <div class="card-tags">
+            <span class="tag tag-mood">Romantic</span>
+            <span class="tag tag-cuisine">Bar</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="restaurant-card">
+        <div class="card-image" style="background: linear-gradient(135deg, #FF6B35 0%, #FFB020 100%);">
+          <span class="badge badge-veg">🌿</span>
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">Olive Bistro</h3>
+          <div class="card-meta">
+            <span class="rating">⭐ 4.3</span>
+            <span class="dot">·</span>
+            <span class="price">₹₹₹₹</span>
+            <span class="dot">·</span>
+            <span class="distance">3.4 km</span>
+          </div>
+          <div class="card-tags">
+            <span class="tag tag-mood">Candlelit</span>
+            <span class="tag tag-cuisine">Italian</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="restaurant-card">
+        <div class="card-image" style="background: linear-gradient(135deg, #1388ff 0%, #00e6a5 100%);">
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">Toscano</h3>
+          <div class="card-meta">
+            <span class="rating">⭐ 4.6</span>
+            <span class="dot">·</span>
+            <span class="price">₹₹₹</span>
+            <span class="dot">·</span>
+            <span class="distance">1.8 km</span>
+          </div>
+          <div class="card-tags">
+            <span class="tag tag-mood">Romantic</span>
+            <span class="tag tag-cuisine">Italian</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="restaurant-card">
+        <div class="card-image" style="background: linear-gradient(135deg, #fa69e5 0%, #ffb020 100%);">
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">The Permit Room</h3>
+          <div class="card-meta">
+            <span class="rating">⭐ 4.2</span>
+            <span class="dot">·</span>
+            <span class="price">₹₹</span>
+            <span class="dot">·</span>
+            <span class="distance">4.2 km</span>
+          </div>
+          <div class="card-tags">
+            <span class="tag tag-mood">Rooftop</span>
+            <span class="tag tag-cuisine">Indian</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Curated Collection -->
+    <section class="collection">
+      <div class="collection-card">
+        <div class="collection-overlay"></div>
+        <div class="collection-content">
+          <h2>Date Night in Koramangala</h2>
+          <p>5 verified spots · Updated weekly</p>
+          <a href="#" class="collection-cta">Explore →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- More Restaurants -->
+    <section class="restaurant-grid">
+      <div class="restaurant-card">
+        <div class="card-image" style="background: linear-gradient(135deg, #0F8A0F 0%, #00e6a5 100%);">
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">On The Border</h3>
+          <div class="card-meta">
+            <span class="rating">⭐ 4.1</span>
+            <span class="dot">·</span>
+            <span class="price">₹₹</span>
+            <span class="dot">·</span>
+            <span class="distance">2.8 km</span>
+          </div>
+          <div class="card-tags">
+            <span class="tag tag-mood">Casual</span>
+            <span class="tag tag-cuisine">Mexican</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="restaurant-card">
+        <div class="card-image" style="background: linear-gradient(135deg, #1C1C1C 0%, #686B78 100%);">
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">Smoke House Deli</h3>
+          <div class="card-meta">
+            <span class="rating">⭐ 4.4</span>
+            <span class="dot">·</span>
+            <span class="price">₹₹₹</span>
+            <span class="dot">·</span>
+            <span class="distance">3.1 km</span>
+          </div>
+          <div class="card-tags">
+            <span class="tag tag-mood">Cozy</span>
+            <span class="tag tag-cuisine">Continental</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="restaurant-card">
+        <div class="card-image" style="background: linear-gradient(135deg, #E23744 0%, #1388ff 100%);">
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">Dialog's</h3>
+          <div class="card-meta">
+            <span class="rating">⭐ 4.7</span>
+            <span class="dot">·</span>
+            <span class="price">₹₹₹</span>
+            <span class="dot">·</span>
+            <span class="distance">1.5 km</span>
+          </div>
+          <div class="card-tags">
+            <span class="tag tag-mood">Romantic</span>
+            <span class="tag tag-cuisine">European</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="restaurant-card">
+        <div class="card-image" style="background: linear-gradient(135deg, #ffb020 0%, #E23744 100%);">
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">Byg Brewski</h3>
+          <div class="card-meta">
+            <span class="rating">⭐ 4.3</span>
+            <span class="dot">·</span>
+            <span class="price">₹₹₹</span>
+            <span class="dot">·</span>
+            <span class="distance">5.6 km</span>
+          </div>
+          <div class="card-tags">
+            <span class="tag tag-mood">Party</span>
+            <span class="tag tag-cuisine">Multi-cuisine</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Bottom Nav (Mobile) -->
+  <nav class="bottom-nav">
+    <button class="nav-item active">🏠<span>Home</span></button>
+    <button class="nav-item">🔍<span>Search</span></button>
+    <button class="nav-item">📋<span>Orders</span></button>
+    <button class="nav-item">👤<span>Profile</span></button>
+  </nav>
+
+  <script>
+    // Chip toggle
+    document.querySelectorAll('.chip').forEach(chip => {
+      chip.addEventListener('click', () => {
+        document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+        chip.classList.add('active');
+      });
+    });
+
+    // Filter dropdown toggle
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        btn.classList.toggle('active');
+      });
+    });
+
+    // Search clear
+    const searchInput = document.getElementById('searchInput');
+    const searchClear = document.getElementById('searchClear');
+    searchInput.addEventListener('input', () => {
+      searchClear.style.display = searchInput.value ? 'block' : 'none';
+    });
+    searchClear.addEventListener('click', () => {
+      searchInput.value = '';
+      searchClear.style.display = 'none';
+    });
+  </script>
+</body>
+</html>

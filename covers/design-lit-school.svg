@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <rect width="1200" height="900" fill="#fffbf7"/>
+
+  <text x="70" y="102" font-family="Inter, -apple-system, Helvetica, Arial, sans-serif" font-size="32" font-weight="800" fill="#0f172a" letter-spacing="-1">LIT<tspan fill="#ff5722">School</tspan></text>
+  <g font-family="Inter, sans-serif" font-size="19" fill="#57534e">
+    <text x="560" y="100">How it works</text>
+    <text x="712" y="100">Outcomes</text>
+    <text x="836" y="100">Stories</text>
+    <text x="930" y="100">Admissions</text>
+  </g>
+  <rect x="1030" y="66" width="100" height="52" rx="26" fill="#ff5722"/>
+  <text x="1050" y="99" font-family="Inter, sans-serif" font-size="16" font-weight="700" fill="#ffffff">Apply</text>
+
+  <text x="70" y="248" font-family="Inter, sans-serif" font-size="66" font-weight="800" fill="#0f172a" letter-spacing="-3">Don't study.</text>
+  <text x="70" y="320" font-family="Inter, sans-serif" font-size="66" font-weight="800" fill="#ff5722" letter-spacing="-3">Solve real problems.</text>
+  <text x="70" y="382" font-family="Inter, sans-serif" font-size="22" fill="#57534e">A challenge-based school in Bengaluru that</text>
+  <text x="70" y="414" font-family="Inter, sans-serif" font-size="22" fill="#57534e">builds job-ready engineers through real client work.</text>
+
+  <rect x="70" y="462" width="290" height="64" rx="32" fill="#ff5722"/>
+  <text x="104" y="502" font-family="Inter, sans-serif" font-size="20" font-weight="700" fill="#ffffff">Check Eligibility →</text>
+  <rect x="378" y="462" width="200" height="64" rx="32" fill="none" stroke="#0f172a" stroke-width="3"/>
+  <text x="410" y="502" font-family="Inter, sans-serif" font-size="19" font-weight="600" fill="#0f172a">See Outcomes</text>
+
+  <text x="70" y="580" font-family="Inter, sans-serif" font-size="20" font-weight="700" fill="#0f172a">87% placed · ₹6–12 LPA · 40+ partners</text>
+
+  <rect x="760" y="200" width="370" height="210" rx="20" fill="#ffffff" stroke="#e7e2dd" stroke-width="2"/>
+  <rect x="760" y="200" width="370" height="210" rx="20" fill="none" stroke="#00000010"/>
+  <text x="792" y="248" font-family="Inter, sans-serif" font-size="15" font-weight="700" fill="#ff5722">CHALLENGE 01</text>
+  <text x="792" y="292" font-family="Inter, sans-serif" font-size="25" font-weight="700" fill="#0f172a">Build a booking system</text>
+  <text x="792" y="326" font-family="Inter, sans-serif" font-size="17" fill="#57534e">For a local salon chain · 2 weeks</text>
+  <line x1="792" y1="352" x2="1098" y2="352" stroke="#e7e2dd" stroke-width="2"/>
+  <text x="792" y="384" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#10b981">In progress</text>
+
+  <rect x="700" y="440" width="430" height="200" rx="20" fill="#ffffff" stroke="#e7e2dd" stroke-width="2" transform="rotate(-3 915 540)"/>
+  <text x="740" y="490" font-family="Inter, sans-serif" font-size="15" font-weight="700" fill="#ff5722" transform="rotate(-3 915 540)">CHALLENGE 02</text>
+  <text x="740" y="536" font-family="Inter, sans-serif" font-size="25" font-weight="700" fill="#0f172a" transform="rotate(-3 915 540)">Design a dashboard</text>
+  <text x="740" y="570" font-family="Inter, sans-serif" font-size="17" fill="#57534e" transform="rotate(-3 915 540)">For a D2C brand · 1 week</text>
+
+  <rect x="70" y="668" width="1120" height="140" rx="18" fill="#f8f5f2" stroke="#e7e2dd" stroke-width="2"/>
+  <g font-family="Inter, sans-serif" font-size="17" fill="#57534e" text-anchor="middle">
+    <circle cx="190" cy="712" r="22" fill="#c6ff00"/>
+    <text x="190" y="720" font-size="18" font-weight="800" fill="#0f172a" text-anchor="middle">1</text>
+    <text x="190" y="764" text-anchor="middle">Pick a challenge</text>
+    <circle cx="490" cy="712" r="22" fill="#c6ff00"/>
+    <text x="490" y="720" font-size="18" font-weight="800" fill="#0f172a" text-anchor="middle">2</text>
+    <text x="490" y="764" text-anchor="middle">Build in a team</text>
+    <circle cx="790" cy="712" r="22" fill="#c6ff00"/>
+    <text x="790" y="720" font-size="18" font-weight="800" fill="#0f172a" text-anchor="middle">3</text>
+    <text x="790" y="764" text-anchor="middle">Ship to a client</text>
+    <circle cx="1090" cy="712" r="22" fill="#c6ff00"/>
+    <text x="1090" y="720" font-size="18" font-weight="800" fill="#0f172a" text-anchor="middle">4</text>
+    <text x="1090" y="764" text-anchor="middle">Get hired</text>
+  </g>
+  <g stroke="#c9c2ba" stroke-width="3" stroke-dasharray="6 8">
+    <line x1="230" y1="712" x2="450" y2="712"/>
+    <line x1="530" y1="712" x2="750" y2="712"/>
+    <line x1="830" y1="712" x2="1050" y2="712"/>
+  </g>
+
+  <text x="70" y="860" font-family="JetBrains Mono, ui-monospace, monospace" font-size="20" fill="#a8a29e">conversion design · information architecture · responsive</text>
+</svg>
